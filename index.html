@@ -1,176 +1,187 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AK Legal Associate - Legal Expertise in Criminal & Family Law</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AK Legal Associate - Criminal & Family Law</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style> 
-  /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* Header Section */
-.header {
-  background: linear-gradient(90deg, #00457C, #0066CC);
-  color: #fff;
-  padding: 2rem 0;
-}
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
+    /* Header Section */
+    .header {
+      background: linear-gradient(90deg, #00457C, #0066CC);
+      color: #fff;
+      padding: 2rem 0;
+    }
 
-.navbar .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
 
-.navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
 
-.navbar .call-button {
-  padding: 0.5rem 1rem;
-  background: #FFD700;
-  color: #333;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-.hero-content {
-  text-align: center;
-}
+    .navbar .call-button {
+      padding: 0.5rem 1rem;
+      background: #FFD700;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
 
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+    .hero-content {
+      text-align: center;
+    }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
 
-.cta-button {
-  padding: 0.8rem 1.5rem;
-  background: #FFD700;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
 
-.cta-button:hover {
-  background: #FFC107;
-}
+    .cta-button {
+      padding: 0.8rem 1.5rem;
+      background: #FFD700;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+    }
 
-/* Section Styling */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
+    .cta-button:hover {
+      background: #FFC107;
+    }
 
-h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #00457C;
-}
+    /* Section Styling */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
 
-p {
-  margin-bottom: 1rem;
-}
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #00457C;
+    }
 
-/* Services Section */
-.services {
-  background: #f9f9f9;
-}
+    p {
+      margin-bottom: 1rem;
+    }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
+    /* Services Section */
+    .services {
+      background: #f9f9f9;
+    }
 
-.service-card {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-.service-card h3 {
-  color: #00457C;
-  margin-bottom: 0.5rem;
-}
+    .service-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-.service-card p {
-  font-size: 0.9rem;
-}
+    .service-card h3 {
+      color: #00457C;
+      margin-bottom: 0.5rem;
+    }
 
-/* Contact Section */
-.contact {
-  text-align: center;
-}
+    .service-card p {
+      font-size: 0.9rem;
+    }
 
-.contact a {
-  color: #00457C;
-  text-decoration: none;
-  font-weight: bold;
-}
+    /* Contact Section */
+    .contact {
+      text-align: center;
+    }
 
-.contact a:hover {
-  text-decoration: underline;
-}
+    .contact a {
+      color: #00457C;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-/* Footer */
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-}
-</style>
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
+
   <header class="header">
     <div class="container">
       <nav class="navbar">
         <a href="#" class="logo">AK Legal Associate</a>
+
         <ul class="nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
         <a href="tel:9870311010" class="call-button">Call Us: 9870311010</a>
       </nav>
+
       <div class="hero-content">
         <h1>Expert Legal Solutions for Criminal & Family Law</h1>
         <p>Your trusted legal partner, delivering justice and peace of mind.</p>
@@ -180,25 +191,41 @@ p {
   </header>
 
   <main>
+
     <section id="about" class="about">
       <div class="container">
         <h2>About Us</h2>
-        <p>At <strong>AK Legal Associate</strong>, we provide unparalleled legal representation in criminal and family law matters. Our experienced attorneys bring a wealth of knowledge and dedication to each case, ensuring that your rights and interests are protected.</p>
-        <p>Whether you are facing criminal charges or navigating complex family disputes, we are here to guide you every step of the way.</p>
+        <p>
+          At <strong>AK Legal Associate</strong>, we provide reliable legal representation
+          in criminal and family law matters. We handle each case with professionalism,
+          confidentiality, and dedication.
+        </p>
+        <p>
+          Whether you are facing criminal charges or family disputes, we guide you
+          at every stage with clarity and confidence.
+        </p>
       </div>
     </section>
 
     <section id="services" class="services">
       <div class="container">
         <h2>Our Services</h2>
+
         <div class="service-grid">
           <div class="service-card">
             <h3>Criminal Law</h3>
-            <p>Comprehensive legal defense for criminal cases, safeguarding your rights and advocating for justice.</p>
+            <p>
+              Legal defense for criminal cases, bail matters, trials,
+              and legal consultation.
+            </p>
           </div>
+
           <div class="service-card">
             <h3>Family Law</h3>
-            <p>Empathetic representation in divorce, custody battles, alimony, and other family-related legal issues.</p>
+            <p>
+              Divorce, custody, maintenance, domestic disputes,
+              and family settlements.
+            </p>
           </div>
         </div>
       </div>
@@ -207,19 +234,28 @@ p {
     <section id="contact" class="contact">
       <div class="container">
         <h2>Contact Us</h2>
-        <p>If you need expert legal advice or representation, reach out to us today.</p>
+        <p>Get in touch for trusted legal guidance.</p>
+
         <p><strong>Phone:</strong> <a href="tel:9870311010">9870311010</a></p>
-        <p><strong>Email:</strong> <a href="mailto:advaftabkhan@gmail.com">info: advaftabkhan@gmail.com</a></p>
-        <p><strong><a href="address:Plot No, 3/A-3, Road No. 8, Govandi Slums, Govandi West, Baiganwadi, Govandi East, Mumbai, Maharashtra 400043"Office Address:</strong>plot 3 A-3 road no.8 Baganwadi govandi Mumbai 40043</p>
+        <p><strong>Email:</strong> <a href="mailto:advaftabkhan@gmail.com">advaftabkhan@gmail.com</a></p>
+        <p>
+          <strong>Office Address:</strong><br>
+          Plot No. 3/A-3, Road No. 8,<br>
+          Baiganwadi, Govandi East,<br>
+          Mumbai, Maharashtra – 400043
+        </p>
+
         <a href="tel:9870311010" class="cta-button">Call Now</a>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 AK Legal Associate. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+      <p>© 2025 AK Legal Associate. All Rights Reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
